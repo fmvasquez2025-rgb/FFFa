@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Chupala Pitty</h1>
+        <p>Presiona el botón o te gusta el dedo sin uña.</p>
+
+        <!-- Botón -->
+        <a href="#" class="boton-redireccion"
+           onclick="mostrarImagen(); return false;">
+           Haz click aquí
+        </a>
+
+        <!-- Imagen oculta -->
+        <img id="imagenSecreta"
+             src="descarga.jpg"
+             style="display:none; margin-top:20px; width:300px;">
+    </div>
+
+<script>
+function mostrarImagen() {
+    document.getElementById("imagenSecreta").style.display = "block";
+}
+</script>
+
+</body>
+</html>
